@@ -74,9 +74,6 @@
         width: 100%;
     }
 
-        .foot:hover {
-            background-color: grey;
-        }
 
 
 
@@ -89,6 +86,9 @@
             .hide2 {
                 visibility: visible;
             }
+            .foot {
+            background-color: lightgrey;
+            }
         }
 
     /** Tablet Media Queries -----------------*/
@@ -98,6 +98,9 @@
             }
             .hide2 {
                 visibility: hidden;
+            }
+            .foot {
+            background-color: grey;
             }
         }
 
@@ -112,6 +115,15 @@
 
             .foot {
                 width: 70%;
+            }
+            .foot {
+            background-color: black;
+            color: white;
+            }
+
+            .head {
+                background-color: blue;
+                color: white;
             }
         }
 

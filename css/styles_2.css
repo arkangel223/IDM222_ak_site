@@ -116,7 +116,12 @@ body {
 
     /** Desktop Media Queries ----------------*/
     @media (min-width: 992px) {
-            
+          h1 {
+            color: pink;
+          }  
+          .wrapper {
+            background-color: purple;
+          }
         }
 
     /** Super Desktop Media Queries -----------*/
