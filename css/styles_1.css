@@ -1,0 +1,126 @@
+/*GENERAL*/
+    .row {
+        width: 100%;
+        text-align: center;
+        font-style: ;
+    }
+
+/*FONT FAMILY*/
+    .col {
+        font-family: helvetica, arial;
+    }
+
+/*HEADER*/
+    .head {
+        width: auto;
+        background-color: lightblue;
+        font-size: 2.3rem;
+        padding: 5rem;
+    }
+
+        .head:hover {
+            background-color: blue;
+        }
+
+/*MIDDLE CONTENT*/
+    .group {
+        display: inline;
+        font-size: 1.5rem;
+    }
+
+        /*LEFT BUTTON*/
+        .big {
+            background-color: pink;
+            border-radius: 10px;
+            margin: 5%;
+            float: left;
+            width: 40%;
+            padding-top: 3rem;
+            padding-bottom: 3rem;
+        }
+
+                .big:hover {
+                    background-color: red;
+                }
+
+        /*RIGHT BUTTON*/
+        .small {
+            background-color: lightgreen;
+            border-radius: 10px;
+            margin: 5%;
+            float: right;
+            width: 40%;
+            padding-top: 3rem;
+            padding-bottom: 3rem;
+        }
+
+                .small:hover {
+                    background-color: green;
+                }
+
+        /*DISSAPEARING TEXT*/
+        h3 {
+            font-size: 0.8rem;
+            padding-top: 1rem;
+        }
+
+/*FOOTER*/
+    .foot {
+        display: inline-block;
+        padding-top: 3rem;
+        padding-bottom: 3rem;
+        border-radius: 10px;
+        background-color: lightgrey;
+        width: 100%;
+    }
+
+        .foot:hover {
+            background-color: grey;
+        }
+
+
+
+/*MEDIA QUERIES*/
+    /** Mobile Media Queries -----------------*/
+    @media (min-width: 400px) {
+            .hide1 {
+                visibility: hidden;
+            }
+            .hide2 {
+                visibility: visible;
+            }
+        }
+
+    /** Tablet Media Queries -----------------*/
+    @media (min-width: 768px) {
+            .hide1 {
+                visibility: visible;
+            }
+            .hide2 {
+                visibility: hidden;
+            }
+        }
+
+    /** Desktop Media Queries ----------------*/
+    @media (min-width: 992px) {
+            .hide1 {
+                visibility: visible;
+            }
+            .hide2 {
+                visibility: hidden;
+            }
+
+            .foot {
+                width: 70%;
+            }
+        }
+
+    /** Super Desktop Media Queries -----------*/
+    @media (min-width: 1200px) {
+            .hide1 {
+                visibility: visible;
+            }
+            .hide2 {
+                visibility: hidden;
+            }
+        }

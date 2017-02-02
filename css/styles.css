@@ -1,0 +1,369 @@
+@font-face {
+    font-family: 'fantasticamedium';
+    src: url('../fonts/fantastica-webfont.eot');
+    src: url('../fonts/fantastica-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/fantastica-webfont.woff2') format('woff2'),
+         url('../fonts/fantastica-webfont.woff') format('woff'),
+         url('../fonts/fantastica-webfont.ttf') format('truetype'),
+         url('../fonts/fantastica-webfont.svg#fantasticamedium') format('svg');
+    font-weight: normal;
+    font-style: normal;}
+
+@font-face {
+    font-family: 'bernardo_moda_boldregular';
+    src: url('../fonts/bernardo_moda_bold-webfont.eot');
+    src: url('../fonts/bernardo_moda_bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/bernardo_moda_bold-webfont.woff2') format('woff2'),
+         url('../fonts/bernardo_moda_bold-webfont.woff') format('woff'),
+         url('../fonts/bernardo_moda_bold-webfont.ttf') format('truetype'),
+         url('../fonts/bernardo_moda_bold-webfont.svg#bernardo_moda_boldregular') format('svg');
+    font-weight: normal;
+    font-style: normal;}
+
+@font-face {
+    font-family: 'futurist_fixed-widthregular';
+    src: url('../fonts/futrfw-webfont.eot');
+    src: url('../fonts/futrfw-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/futrfw-webfont.woff2') format('woff2'),
+         url('../fonts/futrfw-webfont.woff') format('woff'),
+         url('../fonts/futrfw-webfont.ttf') format('truetype'),
+         url('../fonts/futrfw-webfont.svg#futurist_fixed-widthregular') format('svg');
+    font-weight: normal;
+    font-style: normal;}
+
+
+body {background-color: black;
+		color: white;
+		font-size: 130%;}
+
+.wrapper { width: 100%;
+            display: block;
+            margin: 0px auto;
+            max-width: 960px;}
+
+#homepic {width: 100%;
+            display: block;
+            margin: 0px auto;
+            max-width: 960px;}
+
+#nav {width: 100%;
+        height: 100px;
+        z-index: 1000;
+        display: block;
+        margin: 0px auto;
+        max-width: 960px;
+        background-image: url("../images/navbar_background.jpg");
+        background-repeat: no-repeat;
+        background-size: 100% 100%}
+
+h1 {    font-size: 250%;
+        text-align: center;
+		font-family: 'fantasticamedium', Helvetica, serif;
+        text-shadow: 2px 2px 6px #111111;
+    }
+
+.toolbar {max-width: 960px;}
+
+a.navbutton {   color: #4e7983;
+                display: inline-block;
+                font-size: 135%;
+                letter-spacing: 1px;
+                font-family: 'bernardo_moda_boldregular', Helvetica, serif;
+                margin-top: 5px;
+                margin-bottom: 20px;
+                text-shadow: 2px 2px 6px #111111;}
+
+
+
+a.navbutton:hover {color: #a5d3dd;}
+
+a#navhome {     float: left;
+                margin: 10px 20px 10px 50px;}
+a#navportfolio {float: left;
+                margin: 10px 20px 10px 20px;}
+a#navprofile {  float: right;
+                margin: 10px 20px 10px 20px;}
+/*a#navcontact {  float: right;
+                margin: 10px 15px 10px 15px;}*/
+a#navresume {   float: right;
+                margin: 10px 50px 10px 20px;}
+
+
+.title {text-align: center;
+        padding: 40px 40px 40px 40px;
+        text-transform: uppercase;
+        font-family: 'futurist_fixed-widthregular', Helvetica, serif;
+        font-size: 170%;
+        letter-spacing: 20pt;
+        text-shadow: 2px 2px 6px #111111;
+    }
+
+#portfolio {    background-image: url('http://akleindesign.com/images/portfolio_bg_opt.jpg');
+                display: block;
+                max-width: 960px;
+                width: 90%;
+                margin: 25px auto;
+                background-repeat: no-repeat;}
+
+#portfolio_block {overflow: auto;}
+
+#profile {      background-image: url('http://akleindesign.com/images/profile_bg_opt.jpg');
+                display: block;
+                max-width: 960px;
+                width: 90%;
+                margin: 25px auto;
+                background-repeat: no-repeat;}
+
+#profile_block {overflow: auto;}
+
+#resume {       background-image: url('http://akleindesign.com/images/resume_bg_opt.jpg');
+                display: block;
+                max-width: 960px;
+                width: 90%;
+                margin: 25px auto;
+                background-repeat: no-repeat;}
+
+#resume_block {overflow: auto;}
+
+
+
+
+
+
+
+
+
+.media {    position: fixed;
+            z-index: 1005;}
+
+a.social {float: left;
+            clear: left;
+            margin: 8px 8px 8px 8px;}
+
+a#email { background-image: url('http://akleindesign.com/images/email_sprite.jpg');
+            display: block;
+            height: 25px;
+            width: 25px;
+            background-position: -25px 0;}
+
+a#email:hover { background-position: 0px 0;}
+
+a#linkedin { background-image: url('http://akleindesign.com/images/linkedin_sprite.jpg');
+            display: block;
+            height: 25px;
+            width: 25px;
+            background-position: -25px 0;}
+
+a#linkedin:hover { background-position: 0px 0;}
+
+a#facebook { background-image: url('http://akleindesign.com/images/facebook_sprite.jpg');
+            display: block;
+            height: 25px;
+            width: 25px;
+            background-position: -25px 0;}
+
+a#facebook:hover { background-position: 0px 0;}
+
+a#instagram { background-image: url('http://akleindesign.com/images/instagram_sprite.jpg');
+            display: block;
+            height: 25px;
+            width: 25px;
+            background-position: -25px 0;}
+
+a#instagram:hover { background-position: 0px 0;}
+
+
+
+
+
+
+
+
+
+
+.portlink { color: white;
+                float: left;
+                margin: 5px 5px 5px 5px;
+                text-align: center;
+                font-size: 140%;
+                text-shadow: 2px 2px 6px #111111;
+                font-family: 'bernardo_moda_boldregular', Helvetica, serif;
+                }
+
+a.portlink:hover {  color: white;
+                    letter-spacing: 1px;}
+
+a#photo {   background-image: url('http://akleindesign.com/images/photo_sprite.jpg');
+            display: block;
+            width: 300px;
+            padding-top: 98px;
+            padding-bottom: 98px;}
+
+a#photo:hover { background-position: -300px 0;}
+
+a#digart {  background-image: url('http://akleindesign.com/images/digital_sprite.jpg');
+            display: block;
+            width: 300px;
+            padding-top: 98px;
+            padding-bottom: 98px;}
+
+a#digart:hover { background-position: -300px 0;}
+
+a#fineart { background-image: url('http://akleindesign.com/images/fine_sprite.jpg');
+            display: block;
+            width: 300px;
+            padding-top: 98px;
+            padding-bottom: 98px;}
+
+a#fineart:hover { background-position: -300px 0;}
+
+
+#profpic {  float: left;
+            padding: 10px 10px 10px 100px;}
+
+#about {    max-width: 520px;
+            text-align: left;
+            letter-spacing: 1pt;
+            font-size: 80%;
+            padding: 10px 50px 10px 10px;
+            font-family: "Times New Roman", serif;
+            color: #a5d3dd;
+            line-height: 170%;
+            float: right;}
+
+.resumewrapper {    max-width: 960px;
+                    line-height: 110%;
+                    padding-left: 40px;}
+
+.section {      color: #a5d3dd;
+                text-align: center;
+                padding: 30px 10px 20px 10px;
+                font-size: 160%;
+                letter-spacing: 2pt;
+                font-family: 'bernardo_moda_boldregular', Helvetica, serif;}
+
+.titlebold {    color: #6ca4b1;
+                text-align: left;
+                font-size: 100%;
+                font-family: "Times New Roman", serif;
+                letter-spacing: 1.5pt;
+                line-height: 100%;
+                float: left;}
+
+.bullet {   color: #4e7983;
+            font-size: 80%;}
+
+#drexel {   padding-bottom: 20px;}
+
+#dreyfoos { padding-bottom: 20px;}
+
+#biofactory {  padding-bottom: 20px;}
+
+#photolounge {  padding-bottom: 20px;}
+
+#istar {padding-bottom: 20px;}
+
+#facepaint {padding-bottom: 20px;}
+
+#software {padding-bottom: 20px;}
+
+#artistic {padding-bottom: 20px;}
+
+#other {padding-bottom: 20px;}
+
+.info { color: #6ca4b1;
+        text-align: center;
+        font-size: 100%;
+        font-family: "Times New Roman", serif;
+        letter-spacing: 1.5pt;
+        padding: 5px 5px 5px 5px;
+        line-height: 100%;}
+
+#linktomail {   color: #4e7983;
+                font-size: 100%;
+                font-family: "Times New Roman", Helvetica, serif;}
+
+#linktomail:hover {color: #a5d3dd;}
+
+#linkto {   color: #4e7983;
+                font-size: 100%;
+                font-family: "Times New Roman", Helvetica, serif;}
+
+#linkto:hover {color: #a5d3dd;}
+
+#backtotop { color: #6ca4b1;
+        display: block;
+        text-align: center;
+        font-size: 100%;
+        font-family: "bernardo_moda_boldregular", serif;
+        letter-spacing: 1.5pt;
+        padding: 10px 5px 10px 5px;
+        margin: 0px auto;
+        line-height: 100%;}
+
+#backtotop:hover {color: #a5d3dd;}
+
+#backtohome {   color: #6ca4b1;
+                display: block;
+                text-align: center;
+                font-size: 100%;
+                font-family: "bernardo_moda_boldregular", serif;
+                letter-spacing: 1.5pt;
+                padding: 10px 5px 10px 5px;
+                margin: 0px auto;
+                line-height: 100%;}
+
+#backtohome:hover {color: #a5d3dd;}
+
+
+#nav.docked {   width: 100%;
+                -moz-box-shadow: 0 0 10px #000000;
+                -webkit-box-shadow: 0 0 10px #000000;
+                box-shadow: 0 0 10px #000000;
+                /*border-bottom: 6px solid black;*/}
+
+
+
+
+
+
+
+
+
+
+#homepicportfolio { width: 100%;
+                    display: block;
+                    margin: 0px auto;
+                    max-width: 960px;}
+
+#photography {  background-image: url('http://akleindesign.com/images/portfolio_bg_opt.jpg');
+                display: block;
+                max-width: 960px;
+                width: 90%;
+                margin: 25px auto;
+                background-repeat: no-repeat;
+                overflow: auto;}
+
+.row {  padding: 2px 0px 2px 0px;}
+
+.column {
+                max-width: 300px;
+                height: 204px;
+                display: inline-block;
+                max-width: 100%;
+                padding: 2px 2px 2px 2px;
+                margin: 3px 3px 3px 3px;}
+
+.column:hover { border-color: white;
+                border-width: 1px;}
+
+.clearpic {     clear: left;}
+
+
+
+
+
+
+
+
+
