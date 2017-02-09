@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<!-- DESIGNED BY ALYSSA KLEIN -->
+<html>
+
+    <!-- BEGIN HEAD -->
+    <head>
+    	<meta charset="UTF-8">
+
+      <meta property="og:site_name" content="A. Klein Design"/>
+
+      <meta property="og:title" content="Hi, my name is Alyssa Klein. I am a versatile designer and student merging design, visual art, and biological sciences."/>
+
+      <meta property="og:image" content="img/<!-- INSERT IMAGE HERE -->">
+
+      <meta property="og:url" content="http://akleindesign.com">
+
+    <!-- ALYSSAS WEBSITE OVERHAUL 2017 -->
+
+    <!-- STOP SCALING IN MOBILE -->
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- FAVICON -->
+    	<link rel="shortcut icon" href="img/<!-- INSERT IMAGE HERE -->"/>
+
+    <!-- PAGE TITLE -->
+    	<title>A. Klein Design</title>
+
+    <!-- CSS REFERENCE -->
+    	<link href="css/styles.css" rel="stylesheet">
+
+    </head>
+    <!-- END HEAD -->
+
+	<body>
+
+<!-- WRAPPER -->
+
+<div class="wrapper">
+
+<!-- CONTENT -->
+
+<!-- MENU LINE -->
+	<div class="row menu-tab">
+
+	<!-- MENU ACCORDIAN BUTTON FOR MOBILE -->
+		<button class="accordion top menu col-12">Menu</button>
+			<!-- DISSAPEARING PANEL -->
+			<div class="panel col-12">
+			  <p>
+			  	<!-- ABOUT LINK -->
+			  	<a class ="top mobile col-12" href="about.html">About</a>
+			  	<!-- PORTFOLIO LINK -->
+			  	<a class ="top mobile col-12" href="index.html">Portfolio</a>
+			  </p>
+			</div>
+			<!-- *This dissapears on tablet/desktop -->
+
+	</div>
+
+<!-- AK LOGO -->
+	<div class="row">
+			<!-- LOGO PNG -->
+	          <div class="top logo col-4">
+	              <a href="index.html">
+	                  <img class="img" src="img/bw_logo.png" alt="A. Klein Design">
+	              </a>
+	              <!-- Links to home page -->
+	          </div>
+	</div>
+
+
+<!-- NAME LINE -->
+	<div class="row">
+
+	        <div class="top name col-4">Alyssa Klein</div>
+		<!-- NAVIGATION -->
+			<div class="navigation">
+	              <a class ="top nav col-6" href="about.html">About</a>
+	              <a class ="top nav col-6" href="index.html">Portfolio</a>
+	          </div>
+
+	</div>
+
+<!-- LINE BREAK -->
+<hr class="style7">
+
+<!-- TITLE LINE -->
+	<div class="row">
+
+			<h2 class="top title col-4">Intelligent Human Design</h2>
+
+	</div>
+
+
+<!-- PORTFOLIO GALLERY -->
+<div class="row">
+	<!-- GALLERY 1 -->
+	<div class="gallery col-4">
+		<a class="gallery" href="gallery1.html"><img class="placehold" src="http://placehold.it/400x400">
+		<div class="caption">Gallery 1</div></a>
+	</div>
+	<!-- GALLERY 2 -->
+	<div class="gallery col-4">
+		<a class="gallery" href="gallery2.html"><img class="placehold" src="http://placehold.it/400x400">
+		<div class="caption">Gallery 2</div></a>
+	</div>
+	<!-- GALLERY 3 -->
+	<div class="gallery col-4">
+		<a class="gallery-link" href="gallery3.html"><img class="placehold" src="http://placehold.it/400x400">
+		<div class="caption">Gallery 3</div></a>
+	</div>
+	<!-- GALLERY 4 -->
+	<div class="gallery col-4">
+		<a class="gallery-link" href="gallery4.html"><img class="placehold" src="http://placehold.it/400x400">
+		<div class="caption">Gallery 4</div></a>
+	</div>
+	<!-- GALLERY 5 -->
+	<div class="gallery col-4">
+		<a class="gallery-link" href="gallery5.html"><img class="placehold" src="http://placehold.it/400x400">
+		<div class="caption">Gallery 5</div></a>
+	</div>
+	<!-- GALLERY 6 -->
+	<div class="gallery col-4">
+		<a class="gallery-link" href="gallery6.html"><img class="placehold" src="http://placehold.it/400x400">
+		<div class="caption">Gallery 6</div></a>
+	</div>
+
+</div>
+<!-- END OF PORTFOLIO GALLERY -->
+
+<!-- FOOTER -->
+
+	<p class="top footer">Alyssa Klein &copy 2017</p>
+
+
+<!-- END CONTENT -->
+
+<!-- END WRAPPER -->
+
+<script type="text/javascript">
+		var acc = document.getElementsByClassName("accordion");
+		var i;
+
+		for (i = 0; i < acc.length; i++) {
+		    acc[i].onclick = function(){
+		        /* Toggle between adding and removing the "active" class,
+		        to highlight the button that controls the panel */
+		        this.classList.toggle("active");
+
+		        /* Toggle between hiding and showing the active panel */
+		        var panel = this.nextElementSibling;
+		        if (panel.style.display === "block") {
+		            panel.style.display = "none";
+		        } else {
+		            panel.style.display = "block";
+		        }
+		    }
+		}
+</script>
+
+	</body>
+</html>
