@@ -1,5 +1,7 @@
 * { box-sizing: border-box; }
 
+
+
 /* ROW STYLE */
     /* NORMAL ROW */
         .row {
@@ -28,14 +30,14 @@
 /* ALL COLUMNS STYLE */
 [class*="col-"] {
   background-color: white;
-  border: 1px solid lightgrey;
+  border: 0.5px solid lightgrey;
   padding: 16px;
   float: left;
   width: 100%;
 }
 
 img {
-  max-width: 100%;
+  max-width: 90%;
 }
 
 .top {
@@ -57,42 +59,48 @@ img {
   color: purple;
 }
 
-
-/* Style the buttons that are used to open and close the accordion panel */
+/* MENU ACCORDIAN BUTTON */
 button.accordion {
     background-color: #eee;
     color: #444;
     cursor: pointer;
     padding: 18px;
     width: 100%;
-    text-align: left;
+    display: flex;
+    justify-content: center;
     border: none;
     outline: none;
 }
 
-/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+/* ACTIVE ACCORDIAN BUTTON */
 button.accordion.active, button.accordion:hover {
     background-color: #ddd;
 }
 
-/* Style the accordion panel. Note: hidden by default */
+/* HIDDEN ACCORDIAN */
 div.panel {
     padding: 0 18px;
     background-color: white;
     display: none;
 }
 
-.mobile {
-    text-align: center;
-
+div.panel.active {
+    
 }
 
+.mobile {
+    text-align: center;
+}
+
+/* LOGO STYLE */
 .logo {
-    margin-left: auto;
+    display: flex;
+    justify-content: center;
+/*    margin-left: auto;
     margin-right: auto;
     float: none !important;
     text-align: center;
-}
+*/}
 
 .name {
     font-size: 18px;
@@ -111,14 +119,38 @@ hr.style7 {
     float: right;
 }
 
+.gallery-row {
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
 .gallery {
     text-align: center;
+    text-transform: uppercase;
+    font-family: helvetica;
+    font-size: 14px;
+    max-width: 350px;
+    min-width: 100px;
 }
+
 
 .footer {
     font-size: 12px;
     margin-top: 50px;
 }
+
+
+/* SOME FLEXBOX (not all) */
+
+.gallery-row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+
+}
+
+/* Find other flexbox in media queries*/
+
 
 
 
@@ -127,9 +159,9 @@ hr.style7 {
 
 .prof-pic {
   padding: 20px;
-/*  max-width: 450px;
-*//*  text-align: center;
-*/  margin-left: auto;
+  max-width: 450px;
+  text-align: center;
+  margin-left: auto;
   margin-right: auto;
 }
 
@@ -184,16 +216,22 @@ hr.style7 {
            
            .navigation {
             visibility: hidden;
+            height: none;
            } 
 
            .title-about {
             text-align: center;
            }
 
+
+
         }
 
         @media (min-width: 400px) {
-          
+            .gallery {
+              max-width: 30%;
+            }
+
         }
 
     /** Tablet Media Queries -----------------*/
@@ -204,6 +242,7 @@ hr.style7 {
 
             .menu-tab {
               visibility: hidden;
+              height: none;
             }
 
             .col-1 {width: 8.33%;}
@@ -223,12 +262,21 @@ hr.style7 {
             text-align: left;
             }
 
+            .gallery {
+            max-width: 50%;
+          }
+
+
 
         }
 
     /** Desktop Media Queries ----------------*/
         @media (min-width: 992px) {
           
+            .gallery {
+            max-width: 400px;
+          }
+
         }
 
     /** Super Desktop Media Queries -----------*/
