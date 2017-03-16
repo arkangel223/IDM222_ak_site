@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <!-- DESIGNED BY ALYSSA KLEIN -->
-<html>
 
     <!-- BEGIN HEAD -->
     <head>
@@ -20,7 +19,7 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <!-- FAVICON -->
-    	<link rel="shortcut icon" href="img/<!-- INSERT IMAGE HERE -->"/>
+    	<link rel="shortcut icon" href="img/favicon.png"/>
 
     <!-- PAGE TITLE -->
     	<title>A. Klein Design</title>
@@ -57,80 +56,109 @@
 
 	</div>
 
-<!-- AK LOGO -->
-	<div class="row">
-			<!-- LOGO PNG -->
-	          <div class="top logo">
-	              <a href="index.html">
-	                  <img class="img" src="img/bw_logo.png" alt="A. Klein Design">
-	              </a>
-	              <!-- Links to home page -->
-	          </div>
-	</div>
-
-
 <!-- NAME LINE -->
-	<div class="row">
+	<div class="row ruled">
 
-	        <div class="top name col-4">Alyssa Klein</div>
+	        <a class="name script col-4" href="index.html">Alyssa Klein]</a>
 		<!-- NAVIGATION -->
 			<div class="navigation">
-	              <a class ="top nav col-6" href="about.html">About</a>
-	              <a class ="top nav col-6" href="index.html">Portfolio</a>
+	              <a class ="nav col-6" href="about.html">About</a>
+	              <a class ="nav col-6" href="index.html">Portfolio</a>
 	          </div>
 
 	</div>
 
-<!-- LINE BREAK -->
-<hr class="style7">
+<!-- SLIDER TEST -->
+
+<div class="diy-slideshow">
+
+<figure class="show">
+		<img class="slide" src="img/slide_01.jpg" alt="Alternative Biology"/> 
+	</figure>
+<figure>
+    <img class="slide" src="img/slide_02.jpg" alt="Humidifier"/>
+	</figure>
+<figure>
+    <img class="slide" src="img/slide_03.jpg" alt="Earl Light"/> 
+	</figure>
+<figure>
+    <img class="slide" src="img/slide_04.jpg" alt="FastFraX"/>
+	</figure>
+<figure>
+    <img class="slide" src="img/slide_05.jpg" alt="Maya Model"/>
+	</figure>
+<figure>
+    <img class="slide" src="img/slide_06.jpg" alt="GUI Design"/>
+	</figure>
+<figure>
+    <img class="slide" src="img/slide_09.jpg" alt="Sketching"/>
+	</figure>
+  <span class="prev">&laquo;</span>
+  <span class="next">&raquo;</span>
+</div>
 
 
-<!-- PORTFOLIO GALLERY -->
+<!-- IMAGE GALLERY -->
 
-<!-- ADDED FLEXBOX STUFF HERE -->
+<div class="container">
 
-<div class="gallery-row">
-	<!-- GALLERY 1 -->
-	<div class="gallery">
-		<a class="gallery" href="#gallery1"><img class="child" src="img/thumb_prod.png">
-		<div class="caption">Gallery 1</div></a>
-	</div>
-	<!-- GALLERY 2 -->
-	<div class="gallery">
-		<a class="gallery" href="#gallery2"><img class="child" src="img/thumb_light.png">
-		<div class="caption">Gallery 2</div></a>
-	</div>
-	<!-- GALLERY 3 -->
-	<div class="gallery">
-		<a class="gallery-link" href="#gallery3"><img class="child" src="img/thumb_photo.png">
-		<div class="caption">Gallery 3</div></a>
-	</div>
-	<!-- GALLERY 4 -->
-	<div class="gallery">
-		<a class="gallery-link" href="#gallery4"><img class="child" src="img/thumb_game.png">
-		<div class="caption">Gallery 4</div></a>
-	</div>
-	<!-- GALLERY 5 -->
-	<div class="gallery">
-		<a class="gallery-link" href="#gallery5"><img class="child" src="img/thumb_ux.png">
-		<div class="caption">Gallery 5</div></a>
-	</div>
-	<!-- GALLERY 6 -->
-	<div class="gallery">
-		<a class="gallery-link" href="#gallery6"><img class="child" src="img/thumb_visual.png">
-		<div class="caption">Gallery 6</div></a>
-	</div>
+  <div class="grid">
+
+    <div class="cell">
+      	<a class="img-link" href="about.html">
+      		<img src="img/gallery_01.jpg" class="responsive-image" alt="scorpions">
+      		<p class="caption">Visual Art</p>
+      	</a>
+    </div>
+
+    <div class="cell">
+      	<a class="img-link" href="about.html">
+      		<img src="img/gallery_02.jpg" class="responsive-image" alt="bubbles">
+      		<p class="caption">Photography</p>
+      	</a>
+    </div>
+
+    <div class="cell">
+      	<a class="img-link" href="about.html">
+      		<img src="img/gallery_03.jpg" class="responsive-image" alt="dig">
+      		<p class="caption">Digital Media</p>
+      	</a>
+    </div>
+
+    <div class="cell">
+      	<a class="img-link" href="about.html">
+      		<img src="img/gallery_04.jpg" class="responsive-image" alt="prod">
+      		<p class="caption">Product Design</p>
+      	</a>
+    </div>
+
+    <div class="cell">
+      	<a class="img-link" href="about.html">
+      		<img src="img/gallery_05.jpg" class="responsive-image" alt="prod">
+      		<p class="caption">Game Design</p>
+      	</a>
+    </div>
+
+    <div class="cell">
+      	<a class="img-link" href="about.html">
+      		<img src="img/gallery_06.jpg" class="responsive-image" alt="prod">
+      		<p class="caption">User Experience Design</p>
+      	</a>
+    </div>
+
+  </div>
 
 </div>
-<!-- END OF PORTFOLIO GALLERY -->
 
 <!-- FOOTER -->
 
-	<p class="top footer">Alyssa Klein &copy 2017</p>
-
+<div class="row">
+	<p class="top footer col-12">Alyssa Klein &copy; 2017</p>
+</div>
 
 <!-- END CONTENT -->
 
+</div>
 <!-- END WRAPPER -->
 
 <script type="text/javascript">
@@ -152,6 +180,31 @@
 		        }
 		    }
 		}
+</script>
+
+<!-- TEST SLIDER -->
+
+<script type="text/javascript">
+	(function(){
+var counter = 0,
+    $items = document.querySelectorAll('.diy-slideshow figure'),
+    numItems = $items.length;
+var showCurrent = function(){
+  var itemToShow = Math.abs(counter%numItems);
+  [].forEach.call( $items, function(el){
+    el.classList.remove('show');
+  });
+  $items[itemToShow].classList.add('show');    
+};
+document.querySelector('.next').addEventListener('click', function() {
+     counter++;
+     showCurrent();
+  }, false);
+document.querySelector('.prev').addEventListener('click', function() {
+     counter--;
+     showCurrent();
+  }, false); 
+})();
 </script>
 
 	</body>
