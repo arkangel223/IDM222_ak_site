@@ -89,5 +89,5 @@ html.remodal-is-locked {
 
 .remodal-is-initialized {
   /* Disable Anti-FOUC */
-  display: absolute;
+  display: inline-block;
 }
