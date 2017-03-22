@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+<html lang="en">
 <!-- DESIGNED BY ALYSSA KLEIN -->
 
     <!-- BEGIN HEAD -->
@@ -26,6 +27,8 @@
 
     <!-- CSS REFERENCE -->
     	<link href="css/styles.css" rel="stylesheet">
+      <link rel="stylesheet" href="css/remodal.css">
+      <link rel="stylesheet" href="css/remodal-default-theme.css">
 
     </head>
     <!-- END HEAD -->
@@ -37,6 +40,7 @@
 <div class="wrapper">
 
 <!-- CONTENT -->
+<div class="remodal-bg">
 
 <!-- MENU LINE -->
 	<div class="row menu-tab">
@@ -150,6 +154,20 @@
 
 </div>
 
+
+<!-- TEST MODAL -->
+
+<a class="testing" href="#modal">Call the modal with data-remodal-id="modal"</a>
+
+
+<div class="remodal" data-remodal-id="modal">
+  <button data-remodal-action="close" class="remodal-close"></button>
+  <h1>Remodal</h1>
+  <p>
+    Am I working yet?
+  </p>
+</div>
+
 <!-- FOOTER -->
 
 <div class="row">
@@ -157,10 +175,15 @@
 </div>
 
 <!-- END CONTENT -->
-
+</div>
 </div>
 <!-- END WRAPPER -->
 
+<!-- TEST MODAL SCRIPT -->
+
+<script src="js/remodal.min.js"></script>
+
+<!-- ACCORDION SCRIPT -->
 <script type="text/javascript">
 		var acc = document.getElementsByClassName("accordion");
 		var i;
@@ -182,7 +205,8 @@
 		}
 </script>
 
-<!-- TEST SLIDER -->
+
+<!-- SLIDER SCRIPT -->
 
 <script type="text/javascript">
 	(function(){

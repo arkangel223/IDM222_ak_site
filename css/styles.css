@@ -226,7 +226,6 @@ div.panel {
             font-size: 2em;
             margin-top: -.75em;
             opacity: .3;
-            /*user-select: none;*/
           }
           .next:hover, .prev:hover{
             cursor: pointer;
@@ -307,6 +306,8 @@ div.panel {
 
 
 
+
+
 /* ABOUT ME */
 
 #about-row {
@@ -333,7 +334,7 @@ div.panel {
     font-family: helvetica, arial;
     color: #6E6E6E;
     line-height: 1.6rem;
-    max-width: 40rem;
+    max-width: 60rem;
 }
 .social {
     display: flex;
@@ -351,13 +352,17 @@ div.panel {
     margin-right: 1.5rem;
 }
     @media (min-width: 768px) {
+            .about {
+              max-width: 50rem;
+            }
             .title-about {
               text-align: left;
               margin-top: 5rem;
             }
 
             .small-about {
-              max-width: 50rem;
+              /*max-width: 60rem;*/
+              margin-right: 1rem;
             }
 
             .prof-pic {
@@ -367,6 +372,12 @@ div.panel {
 
             #about-row {
                 margin-top: 2rem;
+            }
+    }
+
+    @media (min-width: 1224px) {
+            .small-about {
+                margin-right: 5rem;
             }
     }
 
