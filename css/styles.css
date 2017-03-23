@@ -94,8 +94,7 @@
         cursor: pointer;
         padding: 1rem;
         width: 100%;
-        display: flex;
-        justify-content: center;
+        text-align: center;
         border: none;
         outline: none;
     }
@@ -162,7 +161,7 @@ div.panel {
         /* nav styles */
         .nav {
             font-family: helvetica, arial;
-            font-size: 1rem;
+            font-size: .9rem;
             color: #6E6E6E;
             text-decoration: none;
             margin-top: 1rem;
@@ -177,7 +176,7 @@ div.panel {
 /* FOOTER */
 .footer {
     font-size: 0.8rem;
-    margin-top: 50px;
+    margin-top: 2rem;
     font-family: helvetica, arial;
     color: #6E6E6E;
     display: flex;
@@ -198,6 +197,7 @@ div.panel {
             display: block;
             overflow: hidden;
             margin-bottom: 2rem;
+            border-bottom: 1px solid lightgrey;
           }
           .slide {
             width: 100%;
@@ -248,12 +248,13 @@ div.panel {
 
 
 
-
-/* LINKED GALLERY */
+/* GALLERY */
 .container {
   margin: 0 auto;
   max-width: 1200px;
   padding: 0 1rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
 }
 
 .cell img {
@@ -261,7 +262,8 @@ div.panel {
   margin-right: auto;
   margin-left: auto;
   max-width: 100%;
-  padding: 1rem;
+  padding: 1.8rem;
+  padding-bottom: .8rem;
 }
 
 .caption {
@@ -269,10 +271,10 @@ div.panel {
     padding-bottom: 1rem;
     color: #6E6E6E;
     font-family: helvetica, arial;
-    font-size: .8rem;
+    font-size: .75rem;
     text-align: center;
     text-transform: uppercase;
-    letter-spacing: .08rem;
+    letter-spacing: .06rem;
 }
 
 /* TABLET AND LARGER */
@@ -285,10 +287,14 @@ div.panel {
   .cell {
     width: calc(100% / 3);
   }
+}
 
-  .caption {
-    text-align: left;
-    padding-left: 1rem;
+/* MOBILE ONLY */
+@media (max-width: 768px) {
+  /* makes gallery image links unclickable in mobile */
+  .cell {
+  pointer-events: none;
+  cursor: default;
   }
 }
 
@@ -298,7 +304,7 @@ div.panel {
 }
 
 .img-link:hover > .responsive-image {
-  opacity: 0.8;
+  opacity: 0.9;
   transition: opacity .5s ease-out;
 }
 
@@ -306,58 +312,9 @@ div.panel {
   color: #43ACC6;
 }
 
-
-
-
-
-
-
-/* TEST RESPONSIVE SLIDE */
-
-.rslides {
-  position: relative;
-  list-style: none;
-  overflow: hidden;
-  width: 100%;
-  padding: 0;
-  margin: 0;
-  }
-
-.rslides li {
-  -webkit-backface-visibility: hidden;
-  position: absolute;
-  display: none;
-  width: 100%;
-  left: 0;
-  top: 0;
-  }
-
-.rslides li:first-child {
-  position: relative;
-  display: block;
-  float: left;
-  }
-
-.rslides img {
-  display: block;
-  height: auto;
-  float: left;
-  width: 50%;
-  border: 0;
-  }
-
-#slider2 {
-  box-shadow: none;
-  -moz-box-shadow: none;
-  -webkit-box-shadow: none;
-  margin: 0 auto;
-  }
-
-
-
-
-
-
+.remodal {
+  max-width: 100%;
+}
 
 
 /* ABOUT ME */

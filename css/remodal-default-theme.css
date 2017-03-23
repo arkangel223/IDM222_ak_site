@@ -54,6 +54,7 @@
 .remodal {
   box-sizing: border-box;
   width: 100%;
+  max-width: 1vw;
   margin-bottom: 10px;
   padding: 35px;
 
@@ -62,6 +63,7 @@
 
   color: #2b2e38;
   background: none;
+  overflow-y: auto;
 }
 
 .remodal.remodal-is-opening,
@@ -87,6 +89,8 @@
 .remodal,
 .remodal-wrapper:after {
   vertical-align: middle;
+  max-width: auto;
+  max-height: auto;
 }
 
 /* Close button */
