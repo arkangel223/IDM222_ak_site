@@ -26,9 +26,11 @@
     	<title>A. Klein Design</title>
 
     <!-- CSS REFERENCE -->
-    	<link href="css/styles.css" rel="stylesheet">
+      <link rel="stylesheet" href="css/responsiveslides.css">
       <link rel="stylesheet" href="css/remodal.css">
       <link rel="stylesheet" href="css/remodal-default-theme.css">
+    	<link href="css/styles.css" rel="stylesheet">
+      
 
     </head>
     <!-- END HEAD -->
@@ -157,9 +159,6 @@
 
 <!-- TEST MODAL -->
 
-<a href="#modal">Call the modal with "#modal" or whatever ID attribute value you use.</a>
-
-
 <div class="remodal" data-remodal-id="modal">
     <button data-remodal-action="close" class="remodal-close"></button>
     <img src="img/gallery_01.jpg" alt="testing1">
@@ -168,11 +167,14 @@
 
 <!-- TEST RESPONSIVE SLIDE -->
 
-<ul class="rslides">
-  <li><img src="img/gallery_01.jpg" alt="test1"></li>
-  <li><img src="img/gallery_02.jpg" alt="test2"></li>
-  <li><img src="img/gallery_03.jpg" alt="test3"></li>
-</ul>
+<ul class="rslides" id="slider2">
+      <li><a href="#"><img src="img/gallery_01.jpg" alt="test1"></a></li>
+
+      <li><a href="#"><img src="img/gallery_02.jpg" alt="test2"></a></li>
+
+      <li><a href="#"><img src="img/gallery_03.jpg" alt="test3"></a></li>
+
+    </ul>
 
 
 <!-- FOOTER -->
@@ -192,15 +194,22 @@
 
 
 <!-- TEST RESPONSIVE IMAGES -->
-<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
-<script src="js/responsiveslides.min.js"></script>
-
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script>
+  <script src="js/responsiveslides.min.js"></script>
 <script>
-  $(function() {
-    $(".rslides").responsiveSlides();
-  });
-</script>
+    // You can also use "$(window).load(function() {"
+    $(function () {
 
+      // Slideshow 2
+      $("#slider2").responsiveSlides({
+        auto: false,
+        pager: true,
+        speed: 300,
+        maxwidth: 540
+      });
+
+    });
+  </script>
 
 
 <!-- ACCORDION SCRIPT -->

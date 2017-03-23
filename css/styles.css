@@ -342,8 +342,15 @@ div.panel {
   display: block;
   height: auto;
   float: left;
-  width: 100%;
+  width: 50%;
   border: 0;
+  }
+
+#slider2 {
+  box-shadow: none;
+  -moz-box-shadow: none;
+  -webkit-box-shadow: none;
+  margin: 0 auto;
   }
 
 
